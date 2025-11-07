@@ -33,7 +33,7 @@ git push
 ### Side note: If you have uncommitted changes and someone else pushed updates
 1. git stash
 2. git pull
-3. git pop stash
+3. git stash pop
 4. resolve any merge conflicts
 
 

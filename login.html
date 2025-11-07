@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+      <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ourTeam.html">Our Team</a></li>
+          <li id="book"><a href="loginBook.html">Book</a></li>
+    <li id="signIn"><a href="login.html">Login</a></li>
+      </ul>
+  </nav>
+
+
+<form onsubmit="return handleLogin(event)">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" required><br><br>
+
+            <button type="submit">Login</button><br>
+            <p>Don't have an account? <a href="register.html">Register here</a></p> 
+        </form>
+<script src="script.js"></script>
+</body>
+</html>
