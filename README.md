@@ -26,7 +26,7 @@ git add .
 ```
 git commit -m "describe your changes"
 ```
-### 3. Push to github
+### 3. Push to github  TEST
 ```
 git push
 ```
