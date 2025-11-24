@@ -1,24 +1,53 @@
-
-nav ul {
-    background-color: #c78168;
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+body{
+    background-color:#F1F7FF ;
+    font-family: 'Inter';
 }
 
-nav ul li {
-    display: inline-block;
+.navbar {
+    background-color: white !important;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.nav-item {
     padding: 15px 25px;
 }
-
-nav ul li a {
-    color: #f0e9e1;
-    text-decoration: none;
+.navbar-brand {
+    color: #484A53 !important;
     font-weight: bold;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+.nav-link {
+    color: #484A53 !important;
+    text-decoration: none;
+    font-weight:550;
+    padding: 0 !important;
 }
 
-nav ul li a:hover {
-    background-color: #7a665e;
-    border-radius: 4px;
+.nav-link:hover {
+    color: #193CB8 !important;
+}
+.nav-item.active .nav-link {
+    color: #193CB8 !important;
+}
+
+.login-btn {
+    background-color: #1340DE;
+    color: white !important;
+    font-weight:510;
+    padding: 10px 20px !important;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #fff;
+    color: #1340DE !important;
+    transform: scale(1.05);
+}
+
+.main{
+    padding-top:100px
 }
