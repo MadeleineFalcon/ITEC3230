@@ -14,26 +14,40 @@ Front-end website group project for ITEC 3230
 git clone https://github.com/MadeleineFalcon/ITEC3230.git
 ```
 ## Making changes
-### 1. Pull most recent version
+### 1. Pull most recent changes from main 
 ```
+git checkout main
 git pull
 ```
-### 2.Edit the code and make your changes
-### 3. Commit your changes
+### 2. Switch branches
+```
+git checkout branch-name
+```
+### 3.Edit the code and make your changes
+### 4. Commit your changes
 ```
 git add .
 ```
 ```
 git commit -m "describe your changes"
 ```
-### 3. Push to github  TEST
+### 3. Push to github 
 ```
 git push
 ```
-### Side note: If you have uncommitted changes and someone else pushed updates
-1. git stash
-2. git pull
-3. git stash pop
-4. resolve any merge conflicts
+
+## Merge your branch with main
+### 1. Pull most recent changes from main 
+```
+git checkout main
+git pull
+```
+### 2. Merge your branch and resolve conflicts
+```
+git merge branch-name
+```
+### 3. Push to GitHub
+
+
 
 
