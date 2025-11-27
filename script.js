@@ -1,13 +1,54 @@
 
 /////////////////////////////////////////////////UPDATE NAV ON LOGIN
 
+function updateNavigation() {
+  if (sessionStorage.getItem('isLoggedIn') === 'true') {
+    const signIn = document.getElementById('signIn');
+    const book = document.getElementById('book');
+    
+    if (signIn) {
+      signIn.textContent = 'Profile';
+      signIn.href = 'profile.html';
+    }
+    if (book) {
+      book.href = 'book.html';
+    }
+    if (bookBtn) {
+      bookBtn.href = 'book.html';
+    }
+  }
+}
 
-//TO DO:
-//add js so once user logs in or registers the log in button changes to profile button
+function handleLogin(event) {
+  event.preventDefault();
+  sessionStorage.setItem('isLoggedIn', 'true');
+  window.location.href = 'profile.html';
+  
+  return false;
+}
 
+function handleRegister(event) {
+  event.preventDefault();
+  sessionStorage.setItem('isLoggedIn', 'true');
+  window.location.href = 'profile.html';
+  return false;
+}
 
-
-////////////////////////////////////////////////////////////////////
+document.addEventListener('DOMContentLoaded', function() {
+  updateNavigation();
+  
+  //listener for login 
+  const loginForm = document.querySelector('form[action="profile.html"]');
+  if (loginForm) {
+    loginForm.addEventListener('submit', handleLogin);
+  }
+  
+  //istener for registration 
+  const registerForm = document.querySelector('form[action="register.html"]');
+  if (registerForm) {
+    registerForm.addEventListener('submit', handleRegister);
+  }
+});
 
 /////////////////////////// clicakble calendar 
  document.addEventListener('DOMContentLoaded', function() {
@@ -33,5 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
 
     
