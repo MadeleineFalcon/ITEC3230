@@ -1,85 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Home</title>
-    <!--font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--style-->
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../style.css">
+  <title>Home</title>
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--style-->
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-<!--Navigation-->
-<nav class="navbar fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center" href="home.html">
-      <img src="../assets/tooth.jpg" alt="Logo" height="40">
-      <span class="ms-3 company-name">Company<br>Name</span>
-    </a>
-    <ul class="navbar-nav mx-auto flex-row ps-5">
-      <li class="nav-item active">
-        <a class="nav-link" href="home.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="services.html">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="ourTeam.html">Our Team</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="book" href="loginBook.html">Book</a>
-      </li>
-    </ul>
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-        <a class="nav-link login-btn" id="signIn" href="login.html">Login</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<section class="main">
-<!--code here-->
-<!-- Login Form -->
-<section class="main d-flex justify-content-center align-items-center" style="min-height: 100vh; padding-top: 100px;">
-  <div class="card p-4 shadow" style="max-width: 400px; width: 100%; border-radius: 16px;">
-    <div class="text-center">
-      <img src="../assets/tooth.jpg" alt="QuickSmile Logo" style="width: 60px; height: 60px; object-fit: contain; border-radius: 50%; margin-bottom: 20px;" />
-      <h2 class="fw-bold">QuickSmile Dental</h2>
-      <p class="text-muted mb-4">Welcome back! Please sign in to your account</p>
+  <!--Navigation-->
+  <nav class="navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="home.html">
+        <img src="../assets/tooth.jpg" alt="Logo" height="40">
+        <span class="ms-3 company-name">QuickSmile<br>Dental</span>
+      </a>
+      <ul class="navbar-nav mx-auto flex-row ps-5">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ourTeam.html">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="book" href="loginBook.html">Book</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link login-btn" id="signIn" href="login.html">Login</a>
+        </li>
+      </ul>
     </div>
-    
-    <!-- ✅ Redirects to profile.html -->
-    <form action="profile.html" method="get">
-      <div class="mb-3">
-        <label for="email" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="email" placeholder="user@gmail.com" required>
-      </div>
-      <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
-      </div>
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="rememberMe">
-          <label class="form-check-label" for="rememberMe">Remember me</label>
+  </nav>
+
+  <section class="main">
+    <!-- Login Form -->
+    <section class="main d-flex justify-content-center align-items-center"
+      style="min-height: 100vh; padding-top: 100px;">
+      <div class="card p-4 shadow" style="max-width: 400px; width: 100%; border-radius: 16px;">
+        <div class="text-center">
+          <img src="../assets/tooth.jpg" alt="QuickSmile Logo"
+            style="width: 60px; height: 60px; object-fit: contain; border-radius: 50%; margin-bottom: 20px;" />
+          <h2 class="fw-bold">QuickSmile Dental</h2>
+          <p class="text-muted mb-4">Welcome back! Please sign in to your account</p>
         </div>
-        <a href="#" class="text-decoration-none" style="font-size: 13px;">Forgot password?</a>
-      </div>
-      <button type="submit" class="btn btn-primary w-100 mb-2">Sign In</button>
-      <button type="button" class="btn btn-outline-primary w-100" onclick="window.location.href='register.html'">Sign Up here</button>
-    </form>
 
-    <div class="text-center text-muted mt-4" style="font-size: 12px;">
-      © 2025 QuickSmile Dental. All rights reserved.
-    </div>
-  </div>
-        
-</section>
-<script src="../script.js"></script>
+        <!-- Redirects to profile.html -->
+        <form action="profile.html" method="get">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="user@gmail.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Remember me</label>
+            </div>
+            <a href="#" class="text-decoration-none" style="font-size: 13px;">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 mb-2">Sign In</button>
+          <button type="button" class="btn btn-outline-primary w-100"
+            onclick="window.location.href='register.html'">Sign Up here</button>
+          <p class="text-center mt-3">
+            Not a patient? <a href="adminLogin.html">Admin login</a>
+          </p>
+        </form>
+
+        <div class="text-center text-muted mt-4" style="font-size: 12px;">
+          © 2025 QuickSmile Dental. All rights reserved.
+        </div>
+      </div>
+
+    </section>
+    <script src="../script.js"></script>
 </body>
+
 </html>
