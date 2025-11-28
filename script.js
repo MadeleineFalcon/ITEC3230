@@ -5,6 +5,7 @@ function updateNavigation() {
   if (sessionStorage.getItem('isLoggedIn') === 'true') {
     const signIn = document.getElementById('signIn');
     const book = document.getElementById('book');
+    const bookBtn = document.getElementById('bookBtn');
     
     if (signIn) {
       signIn.textContent = 'Profile';
