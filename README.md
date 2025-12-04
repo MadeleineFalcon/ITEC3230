@@ -57,7 +57,6 @@ Since the site is front-end only, the system is built using:
  ┃ ┣ 📜profile.html
  ┃ ┣ 📜register.html
  ┃ ┗ 📜services.html
- ┣ 📜README.md
  ┣ 📜script.js
  ┗ 📜style.css
 ```
